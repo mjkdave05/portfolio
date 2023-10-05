@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section 
       id="home" 
-      className="min-h-screen flex py-10 md:flex-row flex-col items-center "
+      className="min-h-screen flex py-10 px-4 md:flex-row flex-col items-center "
       >  
         <div className=" flex-1 md:mt-0 mt-6 flex items-center justify-center px-9 md:px-4 ">
           <div className=' h-full relative mt-16 md:mt-0 dav'>
@@ -28,7 +28,7 @@ const Hero = () => {
             </h1>
             <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">Frontend Developer</h4>
             <button className="btn-primary mt-8">Contact Me</button> 
-            <div className="mt-8 text-5xl flex items-center md:justify-start justify-center text-gray-500 gap-4">
+            <div className="mt-8 text-4xl flex items-center md:justify-start justify-center text-gray-500 gap-4">
                   
                     <a href='https://www.instagram.com/mjk_dave/' target="blank" className='hover:text-white cursor-pointer'><Icon icon="mdi:instagram" /></a>
                     <a href='https://github.com/mjkdave05' target="blank" className='hover:text-white cursor-pointer'><Icon icon="mdi:github" /></a>

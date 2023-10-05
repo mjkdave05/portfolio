@@ -8,7 +8,7 @@ const Skills = () => {
           My <span className="text-cyan-600">Skills</span>
         </h3>
         <p className="text-gray-400 mt-3 text-lg">My Knowledge</p>
-         <div className="flex items-center justify-center mt-12 gap-10 flex-wrap">
+         <div className="flex items-center justify-center mt-12 gap-8 px-4 flex-wrap">
 
             <div className="border-2 border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl">
               <div

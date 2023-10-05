@@ -1,26 +1,35 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react'
 import { Icon } from '@iconify/react';
 import emailjs from '@emailjs/browser';
 //toastify notification
 import { ToastContainer, toast } from 'react-toastify';
-  import 'react-toastify/dist/ReactToastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
 
-  const form = useRef();
+  //Emailjs
+  const form = useRef()
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_j2pjf2h', 'template_0pdui2d', form.current, 'IThx4yL54Y3SqUUnB')
+    emailjs.sendForm(
+      'service_j2pjf2h', 
+      'template_0pdui2d', 
+      form.current, 
+      'IThx4yL54Y3SqUUnB')
       .then((result) => {
           console.log(result.text);
+          e.target.reset()
           console.log("message sent")
       }, (error) => {
           console.log(error.text);
       });
+      
   };
 
+  //toastify notification
   const notify = () => {
     toast.success('Message Sent Successfully!', {
       position: "top-right",
@@ -34,6 +43,8 @@ const Contact = () => {
       });
   }
   
+ 
+
   return (
     <section id="contact" className="py-10 px-3 text-white">
       <div className="text-center mt-8">
@@ -42,8 +53,8 @@ const Contact = () => {
 
         <div className="mt-16 flex md:flex-row flex-col gap-6 max-w-5xl bg-gray-800 md:p-6 p-2 rounded-lg mx-auto">
           <form ref={form} onSubmit={sendEmail} className="flex flex-col flex-1 gap-5">
-          <input type="text" name='user_name' placeholder="Your Name" required />
-          <input type="email" name='user_email' placeholder="Your Email Address" required />
+          <input type="text" name='from_name' placeholder="Your Name" required />
+          <input type="email" name='from_email' placeholder="Your Email Address" required />
           <textarea name='message' placeholder="Your Message" rows={10} required></textarea>
           <button type='submit' value="Send" onClick={notify} className="btn-primary w-fit" required>Send Message</button>
           <ToastContainer />
