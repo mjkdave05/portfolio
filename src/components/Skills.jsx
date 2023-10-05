@@ -1,4 +1,4 @@
-
+import { Icon } from '@iconify/react'
 
 const Skills = () => {
   return (
@@ -13,8 +13,8 @@ const Skills = () => {
             <div className="border-2 border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl">
               <div
                className="w-32 h-32 flex items-center justify-center rounded-full hover:text-cyan-600 ">
-                <div className="text-7xl ">
-                <ion-icon name="logo-html5"></ion-icon>
+                <div className="text-8xl ">
+                <Icon icon="mdi:language-html5" />
                 </div>
               </div>
               <p className="text-xl mt-2">HTML5</p>
@@ -23,8 +23,8 @@ const Skills = () => {
             <div className="border-2 border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl">
               <div
                className="w-32 h-32 flex items-center justify-center rounded-full hover:text-cyan-600">
-                <div className="text-7xl ">
-                <ion-icon name="logo-css3"></ion-icon>
+                <div className="text-8xl ">
+                <Icon icon="mdi:language-css3" />
                 </div>
               </div>
               <p className="text-xl mt-2">CSS3</p>
@@ -33,8 +33,8 @@ const Skills = () => {
             <div className="border-2 border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl">
               <div
                className="w-32 h-32 flex items-center justify-center rounded-full hover:text-cyan-600">
-                <div className="text-7xl ">
-                <ion-icon name="logo-javascript"></ion-icon>
+                <div className="text-8xl ">
+                <Icon icon="mdi:language-javascript" />
                 </div>
               </div>
               <p className="text-xl mt-2">JavaScript</p>
@@ -43,8 +43,8 @@ const Skills = () => {
             <div className="border-2 border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl">
               <div
                className="w-32 h-32 flex items-center justify-center rounded-full hover:text-cyan-600">
-                <div className="text-7xl ">
-                <ion-icon name="logo-react"></ion-icon>
+                <div className="text-8xl ">
+                <Icon icon="mdi:react" />
                 </div>
               </div>
               <p className="text-xl mt-2">React.js</p>
@@ -53,8 +53,8 @@ const Skills = () => {
             <div className="border-2 border-cyan-600 relative min-w-[10rem] max-w-[16rem] bg-gray-900 p-10 rounded-xl">
               <div
                className="w-32 h-32 flex items-center justify-center rounded-full hover:text-cyan-600">
-                <div className="text-7xl ">
-                <ion-icon name="logo-github"></ion-icon>
+                <div className="text-8xl ">
+                <Icon icon="mdi:github" />
                 </div>
               </div>
               <p className="text-xl mt-2">GitHub</p>

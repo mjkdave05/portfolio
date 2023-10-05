@@ -1,4 +1,7 @@
 import dav from '../assets/dav.png'
+import { Icon } from '@iconify/react'
+
+
 
 const Hero = () => {
   
@@ -16,8 +19,8 @@ const Hero = () => {
         </div>
         <div className="flex-1 mt-6">
           <div className="md:text-left text-center px-5">
-            <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold">
-              <span className="text-cyan-600 md:text-6xl text-5xl">
+            <h1 className="md:text-4xl text-2xl md:leading-normal leading-10 text-white font-bold">
+              <span className="text-cyan-600 md:text-5xl text-4xl">
                 Hello!
                 <br />
               </span>
@@ -25,11 +28,11 @@ const Hero = () => {
             </h1>
             <h4 className="md:text-2xl text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">Frontend Developer</h4>
             <button className="btn-primary mt-8">Contact Me</button> 
-            <div className="mt-8 text-4xl flex items-center md:justify-start justify-center text-gray-500 gap-4">
+            <div className="mt-8 text-5xl flex items-center md:justify-start justify-center text-gray-500 gap-4">
                   
-                    <a href='https://www.instagram.com/mjk_dave/' target="blank" className='hover:text-white cursor-pointer'><ion-icon  name="logo-instagram"></ion-icon></a>
-                    <a href='https://github.com/mjkdave05' target="blank" className='hover:text-white cursor-pointer'><ion-icon  name="logo-github"></ion-icon></a>
-                    <a href='https://www.linkedin.com/in/david-majekodunmi-b855a81a5/' target="blank" className='hover:text-white cursor-pointer'><ion-icon  name="logo-linkedin"></ion-icon></a>
+                    <a href='https://www.instagram.com/mjk_dave/' target="blank" className='hover:text-white cursor-pointer'><Icon icon="mdi:instagram" /></a>
+                    <a href='https://github.com/mjkdave05' target="blank" className='hover:text-white cursor-pointer'><Icon icon="mdi:github" /></a>
+                    <a href='https://www.linkedin.com/in/david-majekodunmi-b855a81a5/' target="blank" className='hover:text-white cursor-pointer'><Icon icon="mdi:linkedin" /></a>
               
             </div>
           </div>

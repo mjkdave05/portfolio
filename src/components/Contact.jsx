@@ -1,16 +1,11 @@
 import React, { useRef } from 'react';
+import { Icon } from '@iconify/react';
 import emailjs from '@emailjs/browser';
 //toastify notification
 import { ToastContainer, toast } from 'react-toastify';
   import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
-
-  const contact_info =[
-    {logo: 'mail', text:"majekodunmidavid05@gmail.com"},
-    {logo: 'logo-whatsapp', text:"+234 8059385468"},
-    {logo: 'location', text:"Lagos, Nigeria"},
-  ]
 
   const form = useRef();
 
@@ -55,16 +50,30 @@ const Contact = () => {
           </form>
 
           <div className=" flex flex-col gap-7">
-            {
-              contact_info.map ((contact,i)=>
-                <div key={i} className="flex flex-wrap gap-4 w-fit items-center">
+           
+                <div className="flex flex-wrap gap-4 w-fit items-center">
                   <div className="min-w-[3.5rem] text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
-                    <ion-icon name={contact.logo}></ion-icon>
+                  <Icon icon="mdi:email" />
                   </div>
-                  <p className="text-base">{contact.text}</p>
+                  <p className="text-base">majekodunmidavid05@gmail.com</p>
                 </div>
-              )
-            }
+
+                <div className="flex flex-wrap gap-4 w-fit items-center">
+                  <div className="min-w-[3.5rem] text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
+                  <Icon icon="mdi:whatsapp" />
+                  </div>
+                  <p className="text-base">+234 8059385468</p>
+                </div>
+
+                <div className="flex flex-wrap gap-4 w-fit items-center">
+                  <div className="min-w-[3.5rem] text-3xl min-h-[3.5rem] flex items-center justify-center text-white bg-cyan-600 rounded-full">
+                  <Icon icon="mdi:map-marker" />
+                  </div>
+                  <p className="text-base">Lagos, Nigeria</p>
+                </div>
+
+                 
+              
           </div>
 
         </div>
